@@ -64,3 +64,6 @@ void Pet::printInfo() const {
 void Pet::makeSound() const {
     std::cout << name << " makes an undefined sound.\n";
 }
+void Pet::doTrick() const{
+    std::cout << name << " does a trick.\n";
+}

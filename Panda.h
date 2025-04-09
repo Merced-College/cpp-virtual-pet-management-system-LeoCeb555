@@ -30,7 +30,7 @@ public:
     void makeSound() const override;
 
     //New function
-    void doTrick() const;
+    void doTrick() const override;
 };
 
 #endif

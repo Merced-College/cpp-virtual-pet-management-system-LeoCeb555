@@ -36,6 +36,7 @@ public:
     // Output Function
     virtual void printInfo() const;
     virtual void makeSound() const;
+    virtual void doTrick() const;
 };
 
 #endif
