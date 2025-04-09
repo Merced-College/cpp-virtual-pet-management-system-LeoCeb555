@@ -3,6 +3,7 @@
 #include "Dog.h"
 #include "Cat.h"
 #include "Panda.h"
+#include <vector>
 
 int main() {
     Pet pet1("Rex", "Dog", 3, 6);
@@ -39,6 +40,15 @@ int main() {
     std::cout << std::endl;
     myPanda->doTrick();
     std::cout << std::endl;
+
+    std::vector<Pet*> Pets;
+    Pets.push_back(myDog);
+    Pets.push_back(myCat);
+    Pets.push_back(myPanda);
+
+    for (Pet* pet : Pets){
+        pet->makeSound();
+    }
 
     return 0;
 }
