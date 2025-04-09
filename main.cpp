@@ -1,5 +1,7 @@
 #include <iostream>
 #include "Pet.h"
+#include "Dog.h"
+#include "Cat.h"
 
 int main() {
     Pet pet1("Rex", "Dog", 3, 6);

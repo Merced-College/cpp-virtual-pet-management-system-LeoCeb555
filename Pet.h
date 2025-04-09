@@ -6,6 +6,7 @@
 
 class Pet {
 private:
+    //class atributees
     std::string name;
     std::string species;
     int age;
@@ -15,6 +16,7 @@ public:
     // Constructors
     Pet();
     Pet(const std::string& name, const std::string& species, int age, int hungerLevel);
+    virtual ~Pet();
 
     // Accessors (Getters)
     std::string getName() const;
@@ -33,6 +35,7 @@ public:
 
     // Output Function
     void printInfo() const;
+    virtual void makeSound() const;
 };
 
 #endif
