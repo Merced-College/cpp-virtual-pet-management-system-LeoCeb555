@@ -18,16 +18,14 @@ public:
     Cat(const std::string& name, const std::string& species, int age, int hungerLevel, const std::string& favoriteToy);
     
     //Accessors
-    std::string getFavoriteToy(){
-        return favoriteToy;
-    }
+    std::string getFavoriteToy() const;
     
     //Mutators
     void setFavoriteToy(const std::string& favoriteToy);
     
     //Override
-    void printInfo() const;
-    virtual void makeSound() const;
+    void printInfo() const override;
+    void makeSound() const override;
 };
 
 #endif

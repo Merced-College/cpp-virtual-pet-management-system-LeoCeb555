@@ -19,5 +19,15 @@ int main() {
     else if (result > 0) std::cout << pet1.getName() << " comes after " << pet2.getName() << "\n";
     else std::cout << "Both pets have the same name.\n";
 
+    Pet* myDog = new Dog("Bone", "Mammal", 5, 10, "Pitbull");
+    myDog->makeSound();
+    std::cout << std::endl;
+    myDog->printInfo();
+
+    Pet* myCat = new Cat("Lora", "Mammal", 6, 3, "Mouse toy");
+    myCat->makeSound();
+    std::cout << std::endl;
+    myCat->printInfo();
+
     return 0;
 }

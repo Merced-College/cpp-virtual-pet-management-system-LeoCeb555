@@ -7,6 +7,8 @@ Pet::Pet() : name("Unnamed"), species("Unknown"), age(0), hungerLevel(5) {}
 Pet::Pet(const std::string& name, const std::string& species, int age, int hungerLevel)
     : name(name), species(species), age(age), hungerLevel(hungerLevel) {}
 
+Pet::~Pet() {}  // Can add cleanup logic if needed
+
 // Accessors
 std::string Pet::getName() const {
     return name;

@@ -9,7 +9,7 @@ Cat::Cat(const std::string& name, const std::string& species, int age, int hunge
     : Pet(name, species, age, hungerLevel), favoriteToy(favoriteToy) {}
 
 //Accessors
-std::string Cat::getFavoriteToy(){
+std::string Cat::getFavoriteToy() const{
     return favoriteToy;
 }
 

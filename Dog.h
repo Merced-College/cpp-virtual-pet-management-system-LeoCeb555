@@ -22,8 +22,8 @@ public:
     void setBreed(const std::string& breed);
 
     //Override
-    void printInfo() const;
-    virtual void makeSound() const;
+    void printInfo() const override;
+    void makeSound() const override;
 };
 
 #endif

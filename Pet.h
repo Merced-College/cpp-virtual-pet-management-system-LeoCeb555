@@ -34,7 +34,7 @@ public:
     int compareTo(const Pet& other) const; // Returns -1, 0, or 1 based on name comparison
 
     // Output Function
-    void printInfo() const;
+    virtual void printInfo() const;
     virtual void makeSound() const;
 };
 
