@@ -23,7 +23,7 @@ public:
 
     //Mutators
     void setFavoriteMeal(const std::string& favoriteMeal);
-    void setMood(const std::string& mood);
+    void setMood(const std::string& mood) override;
 
     //Overrides
     void printInfo() const override;

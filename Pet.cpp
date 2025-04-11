@@ -67,3 +67,6 @@ void Pet::makeSound() const {
 void Pet::doTrick() const{
     std::cout << name << " does a trick.\n";
 }
+void Pet::setMood(const std::string& mood){
+    this->mood = mood;
+}

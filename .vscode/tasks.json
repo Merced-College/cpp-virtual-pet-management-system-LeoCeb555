@@ -12,6 +12,7 @@
                 "Cat.cpp",
                 "Dog.cpp",
                 "Panda.cpp",
+                "Zookeeper.cpp",
                 "-o",
                 "main"
             ],

@@ -11,6 +11,7 @@ private:
     std::string species;
     int age;
     int hungerLevel; // 0 (full) to 10 (starving)
+    std::string mood;
 
 public:
     // Constructors
@@ -37,6 +38,7 @@ public:
     virtual void printInfo() const;
     virtual void makeSound() const;
     virtual void doTrick() const;
+    virtual void setMood(const std::string& mood);
 };
 
 #endif
